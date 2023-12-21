@@ -1,0 +1,106 @@
+/* Table*/
+
+
+table {
+    margin: 50px auto;
+    margin-top: 50px;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+    
+   
+   }
+   th{
+    background: rgb(92,136,255);
+    background: linear-gradient(0deg, rgba(92,136,255,1) 60%, rgba(101,44,255,1) 100%);    
+    color: #fafafa;
+    font-family: "source-han-sans-simplified-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;    
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+   }
+   tr:nth-child(even){
+    background-color: #eeeeee;
+   }
+/*Main Tabla Inserccion*/
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+    background: rgb(155,82,255);
+    background: radial-gradient(circle, rgba(155,82,255,1) 0%, rgba(0,59,134,1) 100%);
+    border-radius: 36px;
+}
+   
+      /* Formulario */
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.Formulario-Label {
+    color: white;
+    font-family: Montse;
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+.Variable-grupo-input {
+	position: relative;
+}
+
+.formulario-input {
+	width: 100%;
+	background: rgb(217, 210, 255);
+	border: 2px solid #ad6ada;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;  
+}
+.formulario-input-boton {
+    background: rgb(172, 229, 255);
+	width: 100%;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;  
+}
+.formulario-input-boton:focus,.formulario-input:focus {
+    background: #e8aafb;
+	border: 3px solid #9900ff;
+	outline: none;
+    box-shadow: 0 0 10px #e8aafb, 0 0 40px #e8aafb, 0 0 80px #e8aafb;
+    transition-delay: 0.25s;
+}
+.formulario-input-boton:hover,.formulario-input:hover{
+    background: #c49aff;
+    box-shadow: 0 0 10px #c49aff, 0 0 40px #c49aff, 0 0 80px #c49aff;
+    cursor: pointer;
+}
+
+
+.formulario-input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}

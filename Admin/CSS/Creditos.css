@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: white;
+    margin: 0;
+    background-color: #21D4FD;
+background-image: linear-gradient(19deg, #21b7fd 0%, #B721FF 100%);
+}
+
+.el-main {
+    font-family: source-han-sans-simplified-c,sans-serif;
+    --el-main-padding: 20px;
+    display: block;
+    flex: 1;
+    flex-basis: auto;
+    overflow: auto;
+    padding: var(--el-main-padding)
+}
+.el-main {
+    padding: 0!important;
+    overflow-y: hidden!important;
+}
+.el-container,.el-main {
+    overflow-x: hidden!important;
+}
+@keyframes shining {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    6% {
+        transform: scale(.95);
+        opacity: 1
+    }
+
+    13% {
+        transform: scale(.25);
+        opacity: 1
+    }
+
+    24% {
+        transform: scale(.75);
+        opacity: 1
+    }
+
+    30% {
+        transform: scale(.1);
+        opacity: 1
+    }
+
+    45% {
+        transform: scale(.15);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+.news-main-box {
+    width: 966px;
+    margin: 20px auto;
+    padding-bottom: 55px;
+    background-color: #36225e;
+    border-radius: 15px
+}
+
+.news-type-btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #9a56ee;
+    padding-top: 38px
+}
+
+.news-type-btn {
+    margin: 0 11px;
+    padding-top: 10px;
+    width: 100px;
+    height: 36px
+}
+
+.news-type-btn-active,.news-type-btn:hover {
+    color: #00f6ff
+}
+
+.news-main-load {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 44px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.news-main-item {
+    width: 846px;
+    height: 134px;
+    margin-bottom: 14px;
+    background-color: #220f4b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .1s linear
+}
+
+.news-main-item:hover {
+    background-color: #9957ed;
+    transform: scale(1.05);
+    transition: all .1s linear
+}
+
+.news-main-item:hover .news-ctx {
+    color: #fff;
+    transition: all .1s linear
+}
+
+.news-content {
+    font-family: "source-han-sans-simplified-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 38px;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.news-img {
+    margin-left: 15px
+}
+
+.news-img,.news-img img {
+    width: 325px
+}
+
+.news-title-box {
+    color: #00f6ff;
+    height: 30px;
+    width: 450px
+}
+
+.news-title-box .news-title {
+    font-size: 22px;
+    float: left
+}
+
+.news-title-box .news-time {
+    font-size: 16px;
+    float: right;
+    margin-top: 6px
+}
+
+.news-ctx {
+    height: 57px;
+    margin-top: 20px;
+    transition: all .1s linear;
+    overflow: hidden;
+    text-align: left;
+    color: #bc7dff;
+    line-height: 19px
+}
+
+.news-ctx p {
+    font-size: 14px;
+    margin: 0;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.news-ctx a {
+    color: inherit
+}
+.el-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden
+}
+.news-img {
+    margin-left: 15px;
+}
+
+.news-img,.news-img img {
+    width: 325px;
+}
+.news-title-box {
+    font-size: 16px;
+    float: right;
+    margin-top: 6px
+}
+
+.news-ctx {
+    height: 57px;
+    margin-top: 20px;
+    transition: all .1s linear;
+    overflow: hidden;
+    text-align: left;
+    color: #bc7dff;
+    line-height: 19px
+}
+
+.news-ctx p {
+    font-size: 14px;
+    margin: 0;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+/*Aside*/
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.cards-banner-one{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background: linear-gradient(rgba(5, 7, 12, 0.75),rgba(5 ,7 ,12, 0.75)),url(../IMG/Cake\ 2.jpg) no-repeat center center fixed ;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.cards-banner-one .content{
+    width: 90%;
+    padding: 90px 0 0 30px;
+    color: #fff;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+    margin: 10px 500px 20px 0;
+}
+.cards-banner-one iframe{
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: footerend 3s ease 0s 1 normal forwards;
+}
+
+@keyframes footerend {
+	0% {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.footer{
+    background-color: #242628;
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
+    color: #FFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-links ul li a:hover{
+    color: #FFFF;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFF;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #00C3FF;
+}

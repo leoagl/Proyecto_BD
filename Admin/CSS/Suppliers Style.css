@@ -1,0 +1,330 @@
+.el-main {
+    font-family: source-han-sans-simplified-c,sans-serif;
+    --el-main-padding: 20px;
+    display: block;
+    flex: 1;
+    flex-basis: auto;
+    overflow: auto;
+    padding: var(--el-main-padding)
+}
+.el-main {
+    padding: 0!important;
+    overflow-y: hidden!important;
+}
+.el-container,.el-main {
+    overflow-x: hidden!important;
+}
+@keyframes shining {
+    0% {
+        transform: scale(1);
+        opacity: 1
+    }
+
+    6% {
+        transform: scale(.95);
+        opacity: 1
+    }
+
+    13% {
+        transform: scale(.25);
+        opacity: 1
+    }
+
+    24% {
+        transform: scale(.75);
+        opacity: 1
+    }
+
+    30% {
+        transform: scale(.1);
+        opacity: 1
+    }
+
+    45% {
+        transform: scale(.15);
+        opacity: 0
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0
+    }
+
+    to {
+        transform: scale(0);
+        opacity: 0
+    }
+}
+
+.news-main-box {
+    width: 966px;
+    margin: 20px auto;
+    padding-bottom: 55px;
+    background-color: #36225e;
+    border-radius: 15px
+}
+
+.news-type-btn-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #9a56ee;
+    padding-top: 38px
+}
+
+.news-type-btn {
+    margin: 0 11px;
+    padding-top: 10px;
+    width: 100px;
+    height: 36px
+}
+
+.news-type-btn-active,.news-type-btn:hover {
+    color: #00f6ff
+}
+
+.news-main-load {
+    list-style: none;
+    margin-top: 0;
+    padding-top: 44px;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.news-main-item {
+    width: 846px;
+    height: 134px;
+    margin-bottom: 14px;
+    background-color: #220f4b;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .1s linear
+}
+
+.news-main-item:hover {
+    background-color: #9957ed;
+    transform: scale(1.05);
+    transition: all .1s linear
+}
+
+.news-main-item:hover .news-ctx {
+    color: #fff;
+    transition: all .1s linear
+}
+
+.news-content {
+    font-family: "source-han-sans-simplified-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    margin-left: 38px;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start
+}
+
+.news-img {
+    margin-left: 15px
+}
+
+.news-img,.news-img img {
+    width: 325px
+}
+
+.news-title-box {
+    color: #00f6ff;
+    height: 30px;
+    width: 450px
+}
+
+.news-title-box .news-title {
+    font-size: 22px;
+    float: left
+}
+
+.news-title-box .news-time {
+    font-size: 16px;
+    float: right;
+    margin-top: 6px
+}
+
+.news-ctx {
+    height: 57px;
+    margin-top: 20px;
+    transition: all .1s linear;
+    overflow: hidden;
+    text-align: left;
+    color: #bc7dff;
+    line-height: 19px
+}
+
+.news-ctx p {
+    font-size: 14px;
+    margin: 0;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.news-ctx a {
+    color: inherit
+}
+.el-image {
+    position: relative;
+    display: inline-block;
+    overflow: hidden
+}
+.news-img {
+    margin-left: 15px;
+}
+
+.news-img,.news-img img {
+    width: 325px;
+}
+.news-title-box {
+    font-size: 16px;
+    float: right;
+    margin-top: 6px
+}
+
+.news-ctx {
+    height: 57px;
+    margin-top: 20px;
+    transition: all .1s linear;
+    overflow: hidden;
+    text-align: left;
+    color: #bc7dff;
+    line-height: 19px
+}
+
+.news-ctx p {
+    font-size: 14px;
+    margin: 0;
+    width: 460px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+/* Table*/
+
+
+table {
+    margin: 50px auto;
+    margin-top: 50px;
+    width: 60%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, 0.7);
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+}
+   td , th{
+    padding: 15px 20px;
+    text-align: center;
+    
+   
+   }
+   th{
+    background: rgb(92,136,255);
+    background: linear-gradient(0deg, rgba(92,136,255,1) 60%, rgba(101,44,255,1) 100%);    
+    color: #fafafa;
+    font-family: "source-han-sans-simplified-c", sans-serif;
+    font-weight: 900;
+    font-style: normal;    
+    text-transform: uppercase;
+   
+   }
+   tr{
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    transition: outline 1s ease 0s;
+transition: transform 300ms ease-out;
+   }
+   tr:nth-child(even){
+    background-color: #eeeeee;
+   }
+
+   tr :hover{
+    outline: 3px solid #4f0eff;
+    transform: translate(0px, 0px) scale(1.1, 1.1);
+
+   }
+/*Main Tabla Inserccion*/
+main {
+	max-width: 800px;
+	width: 90%;
+	margin: auto;
+	padding: 40px;
+    background: rgb(82,82,255);
+    background: radial-gradient(circle, rgba(82,82,255,1) 0%, rgba(63,0,134,1) 100%);
+    border-radius: 36px;
+}
+      /* Formulario */
+.formulario {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.Formulario-Label {
+    color: white;
+    font-family: Montse;
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+.Variable-grupo-input {
+	position: relative;
+}
+
+.formulario-input {
+	width: 100%;
+	background: rgb(217, 210, 255);
+	border: 2px solid #ad6ada;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;  
+}
+.formulario-input-boton {
+    background: rgb(172, 229, 255);
+	width: 100%;
+	border: 2px solid transparent;
+	border-radius: 3px;
+	height: 45px;
+	line-height: 45px;
+	padding: 0 40px 0 10px;
+	transition: .3s ease all;  
+}
+.formulario-input-boton:focus,.formulario-input:focus {
+    background: #e8aafb;
+	border: 3px solid #9900ff;
+	outline: none;
+    box-shadow: 0 0 10px #e8aafb, 0 0 40px #e8aafb, 0 0 80px #e8aafb;
+    transition-delay: 0.25s;
+}
+.formulario-input-boton:hover,.formulario-input:hover{
+    background: #c49aff;
+    box-shadow: 0 0 10px #c49aff, 0 0 40px #c49aff, 0 0 80px #c49aff;
+    cursor: pointer;
+}
+
+
+.formulario-input-error {
+	font-size: 12px;
+	margin-bottom: 0;
+	display: none;
+}

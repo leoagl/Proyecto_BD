@@ -1,0 +1,568 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    background: white;
+    margin: 0;
+    background: rgb(0,28,118);
+    background: linear-gradient(45deg, rgba(0,28,118,1) 5%, rgba(127,107,255,0.9243346997001926) 50%, rgba(152,16,105,1) 95%);
+}
+/*Animation Png*/
+#app {
+    background-image: url(IMG/bg.8afcf615.png);
+    animation: fileanimation 10s linear infinite
+}
+@keyframes fileanimation {
+    0% {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 500px -250px
+    }
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+    font-family: Montse;
+}
+header{
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    background: rgb(117,82,255);
+    background: radial-gradient(circle, rgba(117,82,255,1) 0%, rgba(68,0,103,1) 100%);
+    align-items: center;
+    padding: 10px;
+    font-family: Andy;
+    background-size: 175% 150%;
+    animation: colora 12s ease-in-out infinite;
+}
+@keyframes colora {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+.logo-nombre {
+    color: white;
+    font-size: 30px;
+}
+.Home, .Admin, .Users,.Inventory,.Products, .Sales, .Settings, .Exit {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+
+/*Sidebar*/
+#sidebar{
+    position: fixed;
+    width: 230px;
+    height: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(70,70,205,1) 51%, rgba(0,212,255,1) 100%);    
+    left: -230px;
+    background-size: 300% 300%;
+    transition: all 500ms ease-out;
+    animation: color 12s ease-in-out infinite;
+    border-radius: 0px 25px 25px 0px;    
+    z-index: 100;
+}
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+
+#sidebar.active{
+    left: 0;
+}
+
+#sidebar h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Oswald', sans-serif;
+}
+
+#sidebar h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+#sidebar ul li{
+    color: rgba(230, 230, 230, .9);
+    text-align: left;
+    padding: 15px 10px;
+    list-style: none;
+    border-bottom: 1px solid rgba(100, 100, 100, 0);
+    transition: 0.5s;
+}
+#sidebar ul li a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Animation sidebar*/
+#sidebar ul li:hover{
+    letter-spacing: 0.15em;
+}
+#sidebar ul li::before{
+    letter-spacing: 0.15em;
+}
+/*Animation sidebar-end*/
+.icon{
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+}
+
+#sidebar .toggle-btn{
+    position: absolute;
+    left: 235px;
+    top: 10px;
+    cursor: pointer;
+}
+#sidebar .toggle-btn span{
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid rgba(100, 100, 100, .3);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+
+#sidebar .toggle-btn span:hover{
+    letter-spacing: 0.55em;
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 10px #2196f3, 0 0 10px #2196f3;
+}
+
+
+/*Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+@font-face {
+    font-family: Andy;
+    src: url(SOURCES/ANDYB.TTF);
+
+}
+@font-face {
+    font-family: Up;
+    src: url(SOURCES/UpheavalPro.ttf);
+}
+
+@font-face {
+    font-family: Bar;
+    src: url(SOURCES/BarlowCondensed-Thin.ttf);
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url(SOURCES/Nunito-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: souls;
+    src: url(SOURCES/FontSouls.ttf);
+}
+
+@font-face {
+    font-family: Montse;
+    src: url(SOURCES/Montserrat-VariableFont_wght.ttf);
+}
+
+.container-footer{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer{
+    background: rgb(16,16,16);
+background: linear-gradient(0deg, rgba(16,16,16,1) 65%, rgba(66,66,66,1) 100%);
+    padding: 80px 0;
+}
+
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-links h4{
+    font-family: 'Montserrat', sans-serif;    
+    font-size: 20px;
+    color: #FFFF;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00C3FF;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-links ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #BBBB;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer-links ul li a:hover{
+    color: #FFFF;
+    padding-left: 6px;
+}
+
+.social-link a{
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #FFFF;
+    transition: all .5s ease;
+}
+.social-link a:hover{
+    background-color: #00C3FF;
+}
+
+/*Cards*/
+.container-card{
+    background-image: url(IMG/Cakes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;    
+    padding-bottom: 100px;
+    padding: 15px 20px;
+    margin: auto;
+    width: 90%;
+    border-radius: 25px;
+    animation: animate 10s infinite;
+}
+
+@keyframes animate{
+    20%{
+        background-image: url(IMG/Cake\ 2.jpg);
+        background-size: cover;
+    }
+}
+
+.container-card .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color:#fff;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 50px;
+    font-family: Up;
+    letter-spacing: 3px;
+    -webkit-text-stroke: 1px rgb(69, 69, 69);
+}
+
+.container-card .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;
+}
+
+.container-card .box-container .box{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    background: #fff;
+    text-align: center;
+    padding:30px 20px;
+}
+
+.container-card .box-container .box img{
+    height: 80px;
+}
+
+.container-card .box-container .box h3{
+    color:#444;
+    font-size: 22px;
+    padding:10px 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container-card .box-container .box p{
+    color:#777;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.container-card .box-container .box .btn{
+    margin-top: 10px;
+    display: inline-block;
+    background:#333;
+    color:#fff;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+}
+
+.container-card .box-container .box .btn:hover{
+    letter-spacing: 1px;
+}
+
+.container-card .box-container .box:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,.3);
+    transform: scale(1.03);
+}
+
+@media (max-width:768px){
+    .container-card{
+        padding:20px;
+    }
+}
+/*Main*/
+.main{
+    text-align: center;
+    background-image: url(IMG/giphy\ mor.gif);
+    padding: 10px 0;
+    color: #fbfbfb;
+    border-radius: 30px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.main h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*Main2*/
+.main2{
+    text-align: center;
+    background-image: url(IMG/giphy.gif);
+    padding: 10px 0;
+    color: #fbfbfb;
+    border-radius: 30px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.main2 h1{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main2 p{
+    font-family: 'Montserrat', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff53c3;
+    border-radius: 3px
+}
+
+/*Aside*/
+
+.btn{
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #262626;
+    color: #fff;
+    font-size: 25px;
+    border: 1px solid #fff;
+}
+
+.btn:hover{
+    opacity: .7;
+}
+
+.cards-banner-one{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background: linear-gradient(rgba(5, 7, 12, 0.75),rgba(5 ,7 ,12, 0.75)),url(IMG/Cake\ 2.jpg) no-repeat center center fixed ;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 30px;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.cards-banner-one .content{
+    width: 90%;
+    padding: 90px 0 0 30px;
+    color: #fff;
+}
+
+.cards-banner-one p,
+.cards-banner-one h2{
+    margin: 10px 500px 20px 0;
+}
+.cards-banner-one iframe{
+    width: 350px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    float: right;
+}
+
+/*Result*/
+.alert-text2 {
+    width: 305px;
+    height: 50px;
+    background: linear-gradient(90deg,#ff0ac5 0,#008aff);
+    border: 2px solid #3e00bd;
+    outline: 3px solid #37f7fb;
+    border-radius: 10px;
+    margin: 28px auto;
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+}
+@keyframes star-0 {
+    0% {
+        transform: scale(.4)
+    }
+
+    40% {
+        transform: scale(.8)
+    }
+
+    70% {
+        transform: scale(.1)
+    }
+
+    to {
+        transform: scale(.4)
+    }
+}
+
+@keyframes star-1 {
+    0% {
+        transform: scale(.5)
+    }
+
+    40% {
+        transform: scale(.2)
+    }
+
+    70% {
+        transform: scale(.6)
+    }
+
+    to {
+        transform: scale(.5)
+    }
+}
+
+@keyframes star-2 {
+    0% {
+        transform: scale(.7);
+    }
+
+    40% {
+        transform: scale(.2);
+    }
+
+    70% {
+        transform: scale(.6);
+    }
+
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes star-3 {
+    0% {
+        transform: scale(1)
+    }
+
+    40% {
+        transform: scale(.2)
+    }
+
+    70% {
+        transform: scale(.6)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+.alert-star {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(IMG/Star.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.alert-star-a-0 {
+    animation: star-0 1.5s linear infinite
+}
+
+.alert-star-a-1 {
+    animation-delay: .2s;
+    animation: star-1 2.5s linear infinite
+}
+
+.alert-star-a-2 {
+    animation-delay: .4s;
+    animation: star-2 1s linear infinite
+}
+
+.alert-star-a-3 {
+    animation-delay: .5s;
+    animation: star-3 2s linear infinite;
+}
